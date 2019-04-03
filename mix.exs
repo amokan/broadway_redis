@@ -28,7 +28,7 @@ defmodule BroadwayRedis.MixProject do
   defp deps do
     [
       {:broadway, "~> 0.1"},
-      {:ex_doc, ">= 0.20.0", only: :docs},
+      {:ex_doc, ">= 0.20.0", only: [:dev, :docs]},
       {:redix, "~> 0.9.3"}
     ]
   end
