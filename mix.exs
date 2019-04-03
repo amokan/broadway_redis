@@ -3,6 +3,7 @@ defmodule BroadwayRedis.MixProject do
 
   @version "0.1.0"
   @description "An opinionated Redis list connector for Broadway"
+  @repo_url "https://github.com/amokan/broadway_redis"
 
   def project do
     [
@@ -36,14 +37,19 @@ defmodule BroadwayRedis.MixProject do
     [
       main: "BroadwayRedis.Producer",
       source_ref: "v#{@version}",
-      source_url: "https://github.com/amokan/broadway_redis"
+      source_url: @repo_url,
+      extras: [
+        "README.md",
+        "CHANGELOG.md"
+      ]
     ]
   end
 
   defp package do
     %{
-      licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/amokan/broadway_redis"}
+      licenses: ["MIT"],
+      links: %{"GitHub" => @repo_url},
+      maintainers: ["Adam Mokan"]
     }
   end
 end
