@@ -1,5 +1,8 @@
 # BroadwayRedis
 
+[![Build Status](https://travis-ci.org/amokan/broadway_redis.svg?branch=master)](https://travis-ci.org/amokan/broadway_redis)
+[![Hex.pm](https://img.shields.io/hexpm/v/broadway_redis.svg)](https://hex.pm/packages/broadway_redis)
+
 An _opinionated_ Redis connector for [Broadway](https://github.com/plataformatec/broadway) to process work from a Redis list structure.
 
 Documentation can be found at [https://hexdocs.pm/broadway_redis](https://hexdocs.pm/broadway_redis).
