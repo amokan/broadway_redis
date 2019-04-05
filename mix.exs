@@ -1,7 +1,7 @@
 defmodule BroadwayRedis.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.2.0"
   @description "An opinionated Redis list connector for Broadway"
   @repo_url "https://github.com/amokan/broadway_redis"
 
@@ -27,7 +27,7 @@ defmodule BroadwayRedis.MixProject do
 
   defp deps do
     [
-      {:broadway, "~> 0.1"},
+      {:broadway, "~> 0.2"},
       {:ex_doc, ">= 0.20.0", only: [:dev, :docs]},
       {:redix, "~> 0.9.3"}
     ]
@@ -35,7 +35,7 @@ defmodule BroadwayRedis.MixProject do
 
   defp docs do
     [
-      main: "BroadwayRedis.Producer",
+      main: "README",
       source_ref: "v#{@version}",
       source_url: @repo_url,
       extras: [
